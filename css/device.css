@@ -1,0 +1,121 @@
+/*pc*/
+@media (min-width: 1024px) {
+  body {
+    grid-template-areas:
+      "header-1 header-1 header-1"
+      "content-l main-1 content-r"
+      "content-l footer-2 content-r"
+      "footer-1 footer-1 content-r";
+    grid-template-rows: 20dvh 50dvh 10dvh 20dvh;
+    grid-template-columns: 30dvw 40dvw 30dvw;
+  }
+
+  h1 {
+    font-size: 5dvh;
+  }
+
+  h2 {
+    font-size: 3.5dvh;
+  }
+
+  nav li::marker {
+    font-size: 2.5dvh;
+  }
+
+  ul {
+    padding-left: 3dvh;
+  }
+
+  a,
+  p,
+  li,
+  output,
+  input,
+  textarea,
+  button {
+    font-size: 2.5dvh;
+  }
+
+  input.triangle {
+    width: 10dvw;
+    height: 3dvh;
+  }
+
+  canvas {
+    width: 40dvw;
+    height: 50dvh;
+  }
+
+  #containers {
+    width: 30dvw;
+  }
+
+  output {
+    width: 10dvw;
+  }
+}
+
+/*tablet, mobile*/
+@media (max-width: 1024px) {
+  body {
+    grid-template-areas:
+      "header-1"
+      "content-l"
+      "main-1"
+      "footer-2"
+      "content-r"
+      "footer-1";
+    grid-template-rows: 20dvh 50dvh 50dvh 10dvh 70dvh 20dvh;
+    grid-template-columns: 100dvw;
+  }
+
+  h1,
+  h2 {
+    font-size: 3.5dvh;
+  }
+
+  nav li::marker {
+    font-size: 2dvh;
+  }
+
+  ul {
+    padding-left: 3dvh;
+  }
+
+  a,
+  p,
+  li,
+  output,
+  input,
+  textarea,
+  button {
+    font-size: 2.5dvh;
+  }
+
+  .item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  input.triangle {
+    width: 50dvw;
+    height: 5dvh;
+  }
+
+  canvas {
+    width: 100dvw;
+    height: 120dvh;
+  }
+
+  #containers {
+    width: 90dvw;
+  }
+
+  textarea.container {
+    width: 90dvw;
+  }
+
+  output {
+    width: 50dvw;
+  }
+}

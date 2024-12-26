@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  display: grid;
+}
+
+header {
+  grid-area: header-1;
+  background-color: gray;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  grid-area: content-l;
+  background-color: white;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main {
+  grid-area: main-1;
+  background-color: black;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+section {
+  grid-area: footer-2;
+  background-color: green;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  grid-area: content-r;
+  background-color: red;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+footer {
+  grid-area: footer-1;
+  background-color: gray;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item {
+  display: flex;
+  padding: min(0.5dvh, 0.5dvw);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+output {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* aside ul {font-weight: bold;}
+ */
+div.task {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button.task {
+  width: 50%;
+  height: 20%;
+}
+
+output {
+  display: flex;
+  aspect-ratio: 3;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+form.triangle {
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+}
+
+#bolden {
+  width: 2dvw;
+  aspect-ratio: 1;
+}
+
+strong {
+  font-weight: 900;
+}
+
+#item-3 {
+  padding: 0;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: none;
+  width: 100%;
+  gap: 5dvh;
+  align-items: center;
+}
+
+#containers {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 5dvh;
+  padding-bottom: 5dvh;
+}
+
+textarea.container {
+  height: 15dvh;
+  border: 0.05dvh solid black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#save {
+  width: 15dvw;
+  height: 8dvh;
+}
